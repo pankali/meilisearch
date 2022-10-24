@@ -38,7 +38,7 @@ pub struct Checked;
 pub struct Unchecked;
 
 #[cfg_attr(test, derive(proptest_derive::Arbitrary))]
-#[derive(Debug, Clone, Default, Serialize, Deserialize, PartialEq)]
+#[derive(Debug, Clone, Default, Serialize, Deserialize, PartialEq, Eq)]
 #[serde(deny_unknown_fields)]
 #[serde(rename_all = "camelCase")]
 pub struct MinWordSizeTyposSetting {
@@ -51,7 +51,7 @@ pub struct MinWordSizeTyposSetting {
 }
 
 #[cfg_attr(test, derive(proptest_derive::Arbitrary))]
-#[derive(Debug, Clone, Default, Serialize, Deserialize, PartialEq)]
+#[derive(Debug, Clone, Default, Serialize, Deserialize, PartialEq, Eq)]
 #[serde(deny_unknown_fields)]
 #[serde(rename_all = "camelCase")]
 pub struct TypoSettings {
@@ -70,7 +70,7 @@ pub struct TypoSettings {
 }
 
 #[cfg_attr(test, derive(proptest_derive::Arbitrary))]
-#[derive(Debug, Clone, Default, Serialize, Deserialize, PartialEq)]
+#[derive(Debug, Clone, Default, Serialize, Deserialize, PartialEq, Eq)]
 #[serde(deny_unknown_fields)]
 #[serde(rename_all = "camelCase")]
 pub struct FacetingSettings {
@@ -80,7 +80,7 @@ pub struct FacetingSettings {
 }
 
 #[cfg_attr(test, derive(proptest_derive::Arbitrary))]
-#[derive(Debug, Clone, Default, Serialize, Deserialize, PartialEq)]
+#[derive(Debug, Clone, Default, Serialize, Deserialize, PartialEq, Eq)]
 #[serde(deny_unknown_fields)]
 #[serde(rename_all = "camelCase")]
 pub struct PaginationSettings {
